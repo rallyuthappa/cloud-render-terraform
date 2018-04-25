@@ -1,6 +1,7 @@
 # Cloud-based Render Environment on Azure using Terraform
 
 This template builds a basic cloud-based rendering solution on Azure. 
+![capture4](https://user-images.githubusercontent.com/15788466/39262897-963d4274-4875-11e8-93b4-c8477bd2a147.PNG)
 
 The terraform automation scripts creates:
 1.	Two Resource Groups
