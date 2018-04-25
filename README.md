@@ -4,15 +4,15 @@ This template builds a basic cloud-based rendering solution on Azure.
 
 The terraform automation scripts builds:
 
-1.	2 Resource Groups
-a.	Primary resource group for hosting VNets, jump host and other supporting / common resources
-b.	Secondary resource group for hosting render blades
+1. Two Resource Groups
+  a.	Primary resource group for hosting VNets, jump host and other supporting / common resources
+  b.	Secondary resource group for hosting render blades
 2.	An Azure virtual network (VNet) with following subnets
-a.	Render Subnet (for render clients)
-b.	FastCache Subnet (for Avere vFXTs)
-c.	Management Subnet (for jump hosts)
-d.	Gateway Subnet (for VPN/ExpressRoute connectivity)
-3.	3 Network Security Groups with basic rules
+  a.	Render Subnet (for render clients)
+  b.	FastCache Subnet (for Avere vFXTs)
+  c.	Management Subnet (for jump hosts)
+  d.	Gateway Subnet (for VPN/ExpressRoute connectivity)
+3.	Three Network Security Groups with basic rules
 4.	A jump host for management / administration / Fast Cache build
 5.	A VM Scale Set using the a Ubuntu based custom managed image which takes following inputs:
 a.	Resource group & location for render clients
