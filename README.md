@@ -1,5 +1,4 @@
-# cloud-render-terraform
-Cloud-based Render Environment on Azure using Terraform
+# Cloud-based Render Environment on Azure using Terraform
 
 This template builds a basic cloud-based rendering solution on Azure. 
 
