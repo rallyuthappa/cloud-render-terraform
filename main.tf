@@ -9,13 +9,13 @@ provider "azurerm" {
 # Create the Master Resource Group for  Administration VM and Networking
 resource "azurerm_resource_group" "prg" {
   name     = "az-render-primary-rg"
-  location = "westus"
+  location = "${var.location}"
 }
 
 # Image Resource Group (temp)
 resource "azurerm_resource_group" "irg" {
   name     = "az-render-image-rg"
-  location = "westus"
+  location = "${var.location}"
 }
 
 # Create a Resource Group for the show or project. Scale Sets are created in this RG
@@ -28,7 +28,7 @@ resource "azurerm_resource_group" "rg" {
 
 resource "azurerm_virtual_network" "vnet" {
   name                = "az-render-vnet"
-  location            = "westus"
+  location            = "${var.location}"
   address_space       = ["10.128.0.0/16"]
   resource_group_name = "${azurerm_resource_group.prg.name}"
 }
